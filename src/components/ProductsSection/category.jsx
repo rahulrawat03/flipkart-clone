@@ -10,7 +10,7 @@ function Category({ categoryClass, name }) {
       onClick={() => navigate(`/products/${name}`)}
     >
       <div className="category__image">
-        <img src="/images/sprite2.png" alt={name} />
+        <img src="/images/sprite.png" alt={name} />
       </div>
       <strong className="category__name">{name}</strong>
     </div>
