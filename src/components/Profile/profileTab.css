@@ -1,0 +1,135 @@
+:root {
+  --color-font: #333;
+  --color-yellow: #ffe11b;
+  --color-grey: #777;
+  --color-grey-light: #ddd;
+  --color-shadaow: #00000022;
+  --color-hover: #0055ff10;
+}
+
+.profile {
+  display: flex;
+  width: 95%;
+  max-width: 120rem;
+  margin: 2rem auto;
+}
+
+.profile__sidebar {
+  flex-basis: 50%;
+  flex-grow: 1;
+  margin-right: 2rem;
+}
+
+.profile__image {
+  display: flex;
+  align-items: center;
+  background: white;
+  text-transform: capitalize;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.4rem var(--color-shadaow);
+}
+
+.profile__image img {
+  width: 4.8rem;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background: var(--color-yellow);
+}
+
+.profile__name {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-font);
+}
+
+.profile__menu {
+  background: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.4rem var(--color-shadaow);
+}
+
+.profile__menu__item {
+  border-bottom: 0.1rem solid var(--color-grey-light);
+}
+
+.profile__menu__item h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--color-grey);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+.icon--profile {
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.icon--profile__chevron {
+  position: absolute;
+  top: 35%;
+  right: 2rem;
+}
+
+.profile__orders {
+  cursor: pointer;
+}
+
+.profile__menu__list {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+
+.profile__menu__list__item {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-font);
+  padding: 1rem 2rem 1rem 6rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.profile__menu__list__item:hover,
+.profile__menu__list__item--active {
+  color: var(--color-primary);
+  background: var(--color-hover);
+}
+
+.profile__menu__content {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  background: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.4rem var(--color-shadaow);
+}
+
+@media screen and (min-width: 768px) {
+  .profile__sidebar {
+    flex-basis: 30%;
+  }
+
+  .profile__menu__content {
+    flex-basis: 70%;
+    flex-grow: 3;
+  }
+}
+
+.profile__menu__content__title {
+  font-size: 2rem;
+  color: var(--color-font);
+  margin-bottom: 1rem;
+}
+
+.profile__menu__content__value {
+  font-size: 1.8rem;
+  color: var(--color-font);
+  margin-bottom: 3rem;
+}

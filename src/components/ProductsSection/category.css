@@ -1,0 +1,24 @@
+:root {
+  --color-font: #555;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.category__name {
+  color: var(--color-font);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  padding-top: 0.5rem;
+  transition: all 0.1s;
+}
+
+.category:hover .category__name {
+  color: var(--color-primary);
+}

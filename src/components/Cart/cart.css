@@ -1,0 +1,23 @@
+.btn--cart {
+  border: 0.2rem solid white !important;
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--cart {
+    border: 0.2rem solid transparent !important;
+  }
+}
+
+.icon--shopping-cart {
+  margin-right: 0.5rem;
+}
+
+.items__count {
+  margin-left: 0.8rem;
+  padding: 0 0.5rem;
+  background: white;
+  color: var(--color-primary);
+  border-radius: 100%;
+}

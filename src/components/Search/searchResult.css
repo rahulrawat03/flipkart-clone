@@ -1,0 +1,45 @@
+:root {
+  --color-font: #333;
+}
+
+.searches {
+  margin: 1rem;
+}
+
+.searches__header {
+  background: white;
+}
+
+.searches__title {
+  color: var(--color-font);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 2rem 4rem 1rem;
+}
+
+.searches__orders {
+  list-style: none;
+  display: flex;
+  font-size: 1.6rem;
+  padding-left: 4rem;
+}
+
+.btn--sort-order {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 4rem 1rem 0.5rem;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.btn--sort-order:hover {
+  color: var(--color-primary);
+}
+
+.icon--sort {
+  margin-left: 0.5rem;
+}
+
+.btn--sort-order--active {
+  color: var(--color-primary);
+}

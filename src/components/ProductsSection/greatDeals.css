@@ -1,0 +1,46 @@
+:root {
+  --color-heading: #333;
+  --color-text: #777;
+  --color-border: #ccc;
+}
+
+.deals-container {
+  display: flex;
+}
+
+.deals__timer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.icon--timer {
+  font-size: 2rem;
+  transform: translateY(0.1rem);
+  margin-right: 0.5rem;
+}
+
+.advertisement {
+  height: 35rem;
+  margin: 1rem;
+  margin-left: 0;
+  padding: 0.2rem;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement {
+    display: block;
+  }
+}
+
+.advertisement img {
+  height: 100%;
+  object-fit: cover;
+}

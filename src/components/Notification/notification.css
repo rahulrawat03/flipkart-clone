@@ -1,0 +1,47 @@
+:root {
+  --color-alert-shadow: #00000077;
+}
+
+.alert {
+  position: fixed;
+  top: 3rem;
+  z-index: 2;
+  font-size: 1.4rem;
+  background: white;
+  color: var(--color-primary);
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 0 0 1rem var(--color-alert-shadow);
+  transform: translateX(-100%);
+  animation: alert-animation 3s ease-out;
+}
+
+.alert__text {
+  font-weight: 500;
+}
+
+@keyframes alert-animation {
+  10% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX(-5%);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+
+  85% {
+    transform: translateX(-5%);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

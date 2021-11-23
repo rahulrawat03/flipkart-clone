@@ -1,0 +1,53 @@
+.footer {
+  background: #172337;
+}
+
+.footer__info {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__info {
+    display: flex;
+  }
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin: 2rem;
+}
+
+.icon--footer {
+  color: #ffc000;
+  font-size: 2rem;
+  margin-right: 0.8rem;
+}
+
+.footer__text {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footer__note {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  grid-column: 1 / 3;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__note {
+    margin: 0;
+    margin-left: 2rem;
+  }
+}

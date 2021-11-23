@@ -1,0 +1,45 @@
+:root {
+  --color-text: #333;
+  --color-discount: #0faa00;
+  --color-text-light: #777;
+}
+
+.product {
+  text-align: center;
+  width: 20rem;
+  height: 100%;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.product:hover .product__image {
+  transform: scale(1.05);
+}
+
+.product__image {
+  height: 55%;
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+  transition: all 0.2s;
+}
+
+.product__title {
+  color: var(--color-text);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.product__offer {
+  color: var(--color-discount);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.product__category {
+  color: var(--color-text-light);
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}

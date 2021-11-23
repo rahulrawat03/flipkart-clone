@@ -1,0 +1,99 @@
+:root {
+  --color-grey: #ccc;
+}
+
+.nav-container {
+  background: var(--color-primary);
+  height: 6rem;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 1rem #00000066;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  width: 95%;
+  max-width: 100rem;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.flipkart__logo {
+  position: relative;
+  width: 10rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.flipkart__logo img {
+  position: absolute;
+  left: -518px;
+  top: -25px;
+  transform: scale(0.25);
+  transform-origin: 0 0;
+}
+
+.menu__options {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000cc;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.expanded {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__options {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    width: fit-content;
+    height: fit-content;
+    min-height: 0;
+    margin-left: 5rem;
+  }
+}
+
+.btn--option {
+  padding: 0.6rem 3.6rem;
+  font-weight: 600;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn--toggler,
+.btn--close {
+  font-size: 2.4rem;
+  color: white;
+  margin-left: 1rem;
+}
+
+.btn--close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--toggler,
+  .btn--close {
+    display: none;
+  }
+}

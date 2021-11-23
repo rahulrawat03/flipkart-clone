@@ -1,0 +1,77 @@
+.categories-container {
+  background: white;
+  width: 100%;
+  box-shadow: 0 0 0.2rem #00000055;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .categories {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.category .category__image {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+}
+
+.category__offers .category__image {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.category__offers img {
+  position: absolute;
+  top: -0.2rem;
+  left: -198px;
+  transform: scale(0.07);
+  transform-origin: 0 0;
+}
+
+.category__grocery img {
+  position: absolute;
+  left: -363px;
+  transform: scale(0.1);
+  transform-origin: 0 0;
+}
+
+.category__mobiles img {
+  position: absolute;
+  left: -417px;
+  transform: scale(0.17);
+  transform-origin: 0 0;
+}
+
+.category__fashion img {
+  position: absolute;
+  left: -300px;
+  transform: scale(0.17);
+  transform-origin: 0 0;
+}
+
+.category__electronics img {
+  position: absolute;
+  top: 0.5rem;
+  left: -71px;
+  transform: scale(0.072);
+  transform-origin: 0 0;
+}
+
+.category__appliances img {
+  position: absolute;
+  top: 0.3rem;
+  left: -900px;
+  transform: scale(0.2);
+  transform-origin: 0 0;
+}

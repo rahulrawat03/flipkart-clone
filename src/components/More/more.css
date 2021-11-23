@@ -1,0 +1,27 @@
+.more {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn--more {
+  border: 0.1rem solid transparent;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.icon--more {
+  display: none;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--more {
+    margin-bottom: 0;
+  }
+
+  .icon--more {
+    display: inline;
+  }
+}
