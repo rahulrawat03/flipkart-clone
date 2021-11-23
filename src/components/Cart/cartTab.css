@@ -38,6 +38,13 @@
 
 .cart__items-container {
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .cart__items-container {
+    flex-direction: row;
+  }
 }
 
 .cart__items {
@@ -59,6 +66,7 @@
   font-size: 2.4rem;
   color: var(--color-font);
   text-align: center;
+  margin-top: 2rem;
 }
 
 .cart__items__total span {
@@ -67,5 +75,14 @@
 }
 
 .btn--place-order {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--place-order {
+    display: inline-block;
+    margin-top: 1rem !important;
+  }
 }

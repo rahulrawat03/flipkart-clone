@@ -6,7 +6,7 @@
 
 .product {
   text-align: center;
-  width: 20rem;
+  width: 14rem;
   height: 100%;
   margin: 1rem;
   cursor: pointer;
@@ -17,11 +17,21 @@
 }
 
 .product__image {
-  height: 55%;
+  height: 40%;
   max-width: 100%;
   object-fit: cover;
   margin: auto;
   transition: all 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    width: 20rem;
+  }
+
+  .product__image {
+    height: 55%;
+  }
 }
 
 .product__title {
