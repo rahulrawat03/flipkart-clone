@@ -31,10 +31,9 @@
 
 .flipkart__logo img {
   position: absolute;
-  left: -518px;
-  top: -25px;
-  transform: scale(0.25);
-  transform-origin: 0 0;
+  left: -432px;
+  top: -14px;
+  transform: scale(1.1);
 }
 
 .menu__options {
