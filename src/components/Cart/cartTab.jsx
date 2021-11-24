@@ -7,6 +7,8 @@ import {
   getItems,
   storeItems,
   removeOneUnit,
+  removeAllUnits,
+  getCountOfItems,
 } from "../services/localStorageServices";
 import { context } from "../services/globalContext";
 
@@ -46,6 +48,13 @@ function CartTab() {
     removeOneUnit(email, id);
   };
 
+  const handleDelete = (id) => {
+    const totalItemOfThisType = getCountOfItems(email, id);
+    setTotalProducts(totalProducts - totalItemOfThisType);
+    setPrice(totalPrice - items[id - 1].price * totalItemOfThisType);
+    removeAllUnits(email, id);
+  };
+
   return (
     <section className="cart-tab">
       <h2 className="cart-tab__title">My Cart</h2>
@@ -68,6 +77,7 @@ function CartTab() {
                 product={product}
                 onIncrement={handleIncrement}
                 onDecrement={handleDecrement}
+                onDelete={handleDelete}
               />
             ))}
           </ul>

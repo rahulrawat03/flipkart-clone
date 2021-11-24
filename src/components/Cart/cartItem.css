@@ -10,11 +10,16 @@
   align-items: center;
   border-bottom: 0.2rem solid var(--color-border);
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .cart__item__image {
   width: 10rem;
   padding: 1rem;
+}
+
+.cart__item__info {
+  flex-grow: 1;
 }
 
 .cart__item__title {
@@ -55,4 +60,9 @@
 
 .btn--decrease-count {
   background: var(--color-danger);
+}
+
+.btn--delete-item {
+  font-size: 3rem;
+  color: var(--color-danger);
 }

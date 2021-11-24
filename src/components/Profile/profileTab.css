@@ -12,10 +12,11 @@
   width: 95%;
   max-width: 120rem;
   margin: 2rem auto;
+  overflow: hidden;
 }
 
 .profile__sidebar {
-  flex-basis: 50%;
+  flex-basis: 40%;
   flex-grow: 1;
   margin-right: 2rem;
 }
@@ -91,7 +92,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--color-font);
-  padding: 1rem 2rem 1rem 6rem;
+  padding: 1rem 2rem 1rem 5rem;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -103,8 +104,10 @@
 }
 
 .profile__menu__content {
-  flex-basis: 50%;
+  flex-basis: 60%;
   flex-grow: 1;
+  word-wrap: break-word;
+  min-width: 5rem;
   padding: 2rem 3rem;
   background: white;
   border-radius: 0.3rem;

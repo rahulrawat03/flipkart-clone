@@ -1,9 +1,9 @@
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus, FaTrash } from "react-icons/fa";
 import "./cartItem.css";
 import { getCountOfItems } from "../services/localStorageServices";
 import { getUser } from "../services/localStorageServices";
 
-function CartItem({ product, onIncrement, onDecrement }) {
+function CartItem({ product, onIncrement, onDecrement, onDelete }) {
   const { id, title, image } = product;
   const { email } = getUser();
 
@@ -28,6 +28,9 @@ function CartItem({ product, onIncrement, onDecrement }) {
           </button>
         </h3>
       </div>
+      <button className="btn btn--delete-item" onClick={() => onDelete(id)}>
+        <FaTrash className="icon--trash" />
+      </button>
     </li>
   );
 }
